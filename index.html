@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>Fourpocaylse Now - Where's the world ending today?</title>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=geometry&sensor=false"></script>
+<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+<script type="text/javascript" src="js/fourpocalypse.js"></script>
+<link rel="stylesheet" href="css/fourpocalypse.css" TYPE="text/css" />
+</head>
+
+<body>
+
+<div id="header"><img class="icon" src="image/icon.gif" />Fourpocalypse Now</div>
+
+<div id="main">
+
+	<div class="loading"><img src="image/loading.gif" /></div>
+	<div id="fourpocalypses"></div>
+
+	<br class="clear" />
+
+	<div id="citysearch">
+		<div style="text-align: center;" class="smallerheader morefourpocalypse">Wanna find a fourpocalypse?</div>
+		<form id="searchform" method="post" action="">
+			<label id="citylabel">Where are you?
+				<span class="small">Enter your location</span>
+			</label>
+
+			<input type="text" name="cityinput" id="cityinput" />
+			<input type="submit" name="citysubmit" id="citysubmit" value="Let's see what's up" />
+		</form>
+	</div>
+
+	<br class="clear" />
+
+</div>
+
+<!--
+<div id="moreinfo">
+	<strong>What is a fourpocalypse?</strong>
+	<p>Whether it's a <a href="">snowpocalypse</a>, <a href="">heatpocalypse</a>, or a <a href="">earthquakepocalypse</a>, it's basically something super bad happening to a bunch of people at the same time.</p>
+</div>
+-->
+
+<div id="moreinfo">
+	<strong>Wanna share feedback? Got a suggestion?</strong>
+	<p>Get a hold of us on Twitter at <a href="http://twitter.com/fourpocalypse">@fourpocalypse</a>.</p>
+	<iframe class="fbooklike" src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fthegreengrass.net%2Ffourpocalypse%2F&amp;send=false&amp;layout=button_count&amp;width=90px&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+</div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-619028-12']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>

@@ -1,0 +1,128 @@
+/* General site styling */
+body {
+	font-family:"Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background: url('http://farm6.staticflickr.com/5059/5411068764_8ac96e0657_b.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#header {
+	line-height: 60px;
+	color: #292929;
+	width: 75%;
+	margin: 25px auto 25px auto;
+	font-family: "Georgia", serif;
+	font-size: 48px;
+}
+
+#header .icon {
+	vertical-align: middle;
+}
+
+.smallerheader {
+	margin-bottom: 15px;
+	color: white;
+	font-size: 18px;
+	text-align: center;
+}
+
+/* Main content area */
+#main {
+	width: 75%;
+	background-color:rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	padding: 15px;
+	margin: 0px auto 0px auto;
+}
+
+#moreinfo {
+	width: 75%;
+	margin: 25px auto 25px auto;
+}
+
+/* Fourpocalypse results */
+.loading {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.result {
+	margin: 10px 0px 10px 0px;
+	color: white;
+}
+
+.iconholder {
+	margin-right: 10px;
+	width: 64;
+	height: 64;
+	float: left;
+}
+
+.venuename {
+	font-size: 16px;
+}
+
+.clear {
+	clear: both;
+}
+
+/* Form styling */
+#searchform {
+	width: 500px;
+	margin: 0px auto 0px auto;
+}
+	
+#citylabel {
+	color: white;
+	display:block;
+	font-weight:bold;
+	text-align:right;
+	width:140px;
+	float:left;
+}
+
+#cityinput {
+	float:left;
+	font-size:12px;
+	padding:4px 2px;
+	border:solid 1px #aacfe4;
+	width:200px;
+	margin:2px 0 20px 10px;
+}
+
+#citysubmit {
+ padding:5px;
+  background-color: #d7f0fe;
+  border: 1px solid #aacfe4;
+  color:#000;
+  text-decoration:none;
+}
+
+.small {
+	color: #c0c0c0;
+	display:block;
+	font-size:11px;
+	font-weight:normal;
+	text-align:right;
+	width:140px;
+}
+
+/* Misc styling */
+.fbooklike {
+	display: block;
+	/* margin: 0px auto 0px auto; */
+}
+
+/* Link styling */
+a:link { color:#AACFE4; text-decoration: none; }
+a:visited { color:#AACFE4; text-decoration: none; }
+a:hover { color:#AACFE4; text-decoration: none; }
+a:active { color:#AACFE4; text-decoration: none; }
+
+#moreinfo a:link { color: #292929; text-decoration: none; }
+#moreinfo a:visited { color:#292929; text-decoration: none; }
+#moreinfo a:hover { color:#292929; background-color: black; text-decoration: none; }
+#moreinfo a:active { color:#292929; text-decoration: none; }
