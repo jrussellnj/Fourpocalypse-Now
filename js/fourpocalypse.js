@@ -15,6 +15,7 @@ $(document).ready(function() {
 				this.codeAddress(unescape(location.hash.replace('#', '')));
 			}
 			else {
+
 				if (navigator.geolocation) {
 					navigator.geolocation.getCurrentPosition( 
 						function (position) {  
@@ -48,7 +49,7 @@ $(document).ready(function() {
 					var list = $('#fourpocalypses');
 					list.html('');
 
-					var howmany = data.response.venues.length;
+					var howmany = data.length;
 
 					list.append(
 						'<div class="smallerheader">There' +
@@ -59,7 +60,7 @@ $(document).ready(function() {
 					);
 
 					// Loop through the returned venues and add their details to the results list
-					$.each(data.response.venues, function(index, element) {
+					$.each(data, function(index, element) {
 						var name = element.name;
 						var stats = element.stats;
 						var hereNow = element.hereNow;
@@ -127,7 +128,7 @@ $(document).ready(function() {
 				this.geocoder.geocode( { 'address': query }, function(results, status) {
 					if (status == google.maps.GeocoderStatus.OK) {
 						location.hash = escape(query);
-						_this.getFourpocalypses(results[0].geometry.location.Qa, results[0].geometry.location.Ra, results[0].formatted_address);
+						_this.getFourpocalypses(results[0].geometry.location.lat(), results[0].geometry.location.lng(), results[0].formatted_address);
 					}
 					else {
 						alert("Geocode was not successful for the following reason: " + status);

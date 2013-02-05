@@ -8,8 +8,16 @@
 </head>
 
 <body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
-<div id="header"><img class="icon" src="image/icon.gif" />Fourpocalypse Now</div>
+<div id="header"><a href="/fourpocalypse/"><img class="icon" src="image/icon.gif" border="0" /></a>Fourpocalypse Now <span style="vertical-align: super; font-size: 14px;">(Beta!)</span></div>
 
 <div id="main">
 
@@ -34,17 +42,8 @@
 
 </div>
 
-<!--
 <div id="moreinfo">
-	<strong>What is a fourpocalypse?</strong>
-	<p>Whether it's a <a href="">snowpocalypse</a>, <a href="">heatpocalypse</a>, or a <a href="">earthquakepocalypse</a>, it's basically something super bad happening to a bunch of people at the same time.</p>
-</div>
--->
-
-<div id="moreinfo">
-	<strong>Wanna share feedback? Got a suggestion?</strong>
-	<p>Get a hold of us on Twitter at <a href="http://twitter.com/fourpocalypse">@fourpocalypse</a>.</p>
-	<iframe class="fbooklike" src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fthegreengrass.net%2Ffourpocalypse%2F&amp;send=false&amp;layout=button_count&amp;width=90px&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+<div class="fb-like" data-href="http://thegreengrass.net/fourpocalypse/" data-send="true" data-width="450" data-show-faces="false"></div>
 </div>
 
 
